@@ -1,14 +1,4 @@
 # micro_web_test
-
-#### 启动主应用
-```shell script
-cd main # 进入到主项目
-npm run serve # 启动项目
-```
-
-#### 启动子应用
-npm run dev
-
 #### 项目介绍
 
 - main 主项目，包含框架代码，位于`micro`目录下。
@@ -74,3 +64,6 @@ http://localhost:3000
 
 ## 发布平台
 http://localhost:3001
+
+npm run dev  启动主应用 4个子应用  服务端
+发布平台要单独启动 在platform目录下
