@@ -7,10 +7,7 @@ npm run serve # 启动项目
 ```
 
 #### 启动子应用
-```shell script
-# micro_web_test 目录下
-npm start 
-```
+npm run dev
 
 #### 项目介绍
 
@@ -55,3 +52,25 @@ npm start
 主子引用的打包和发布
 
 ![image-20220823010752590](http://image.zhuyuanzheng1.top/image-20220823010752590.png)
+
+
+
+koa-generator   supervisor    express  express-generator
+koa -V
+koa2 service
+
+## 子应用
+http://localhost:9002/#/information  (react15)
+http://localhost:9003/#/rank  (react16)
+http://localhost:9004/#/energy  (vue2)
+http://localhost:9005/#/index  (vue3)
+
+
+## 主应用(vue3)
+http://localhost:8080/react16#/login
+
+## 服务端
+http://localhost:3000
+
+## 发布平台
+http://localhost:3001

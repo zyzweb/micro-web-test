@@ -12,6 +12,13 @@ module.exports = {
   assetsDir: 'static',
   filenameHashing: true,
   publicPath: 'http://localhost:9005',
+  css: {
+    loaderOptions: {
+      sass: {
+        implementation: require('sass'), // This line must in sass option
+      },
+    },
+  },
   devServer: {
     contentBase: path.join(__dirname, 'dist'),
     hot: true,

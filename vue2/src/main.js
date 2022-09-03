@@ -18,6 +18,7 @@ if (!window.__MICRO_WEB__) {
   }).$mount('#app-vue')
 }
 
+// 在微前端环境下执行
 export async function mount() {
   instance = new Vue({
     router,

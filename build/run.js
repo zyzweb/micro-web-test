@@ -6,7 +6,7 @@ function runChild () {
   Object.keys(filePath).forEach(item => {
     const childPath = filePath[item]
 
-    runShell(`cd ${childPath} && npm start`)
+    runShell(`cd ${childPath} && npm run dev`)
   });
 
   console.log('start success, open browser now');
