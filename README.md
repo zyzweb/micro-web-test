@@ -1,9 +1,12 @@
 # micro_web_test
-#### 项目介绍
-
-- main 主项目，包含框架代码，位于`micro`目录下。
-- 其他为子项目代码。 
-
+#### 目录结构
+- main 主应用
+- react15 子应用
+- react16 子应用
+- vue2 子应用
+- vue3 子应用
+- service 服务端
+- platform 发布平台
 
 #### 子项目分类
 > 我的。计算器，关注度排行，上市新车 react16
@@ -39,7 +42,7 @@
 4.服务端的功能
 提供数据服务
 5.发布平台
-主子引用的打包和发布
+主子应用的打包和发布
 
 ![image-20220823010752590](http://image.zhuyuanzheng1.top/image-20220823010752590.png)
 
@@ -48,16 +51,14 @@
 koa-generator   supervisor    express  express-generator
 koa -V
 koa2 service
+## 主应用(vue3)
+http://localhost:8080/react16#/login
 
 ## 子应用
 http://localhost:9002/#/information  (react15)
 http://localhost:9003/#/rank  (react16)
 http://localhost:9004/#/energy  (vue2)
 http://localhost:9005/#/index  (vue3)
-
-
-## 主应用(vue3)
-http://localhost:8080/react16#/login
 
 ## 服务端
 http://localhost:3000
