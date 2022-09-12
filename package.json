@@ -8,7 +8,5 @@
     "start-f": "node ./build/init.js -f && node ./build/run.js"
   },
   "author": "yancy",
-  "license": "ISC",
-  "devDependencies": {},
-  "dependencies": {}
+  "license": "ISC"
 }

@@ -12,6 +12,7 @@ module.exports = {
   assetsDir: 'static',
   filenameHashing: true,
   publicPath: 'http://localhost:9005',
+  // lintOnSave: false,
   css: {
     loaderOptions: {
       sass: {
@@ -39,7 +40,7 @@ module.exports = {
       // 把子应用打包成 umd 库格式
       libraryTarget: 'umd',
       filename: 'vue3.js',
-      library: 'vue3',
+      library: 'vue3', //将vue3挂载到window上 才能使用window.vue3(里面包含生命周期函数)
       jsonpFunction: `webpackJsonp_${name}`,
     },
   },

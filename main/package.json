@@ -11,7 +11,7 @@
     "core-js": "^3.6.5",
     "import-html-entry": "^1.11.1",
     "lodash": "^4.17.20",
-    "test-micro-web": "^1.0.5",
+    "test-micro-web": "file:./test-micro-web",
     "node-sass": "^5.0.0",
     "sass-loader": "^10.1.1",
     "single-spa": "5.8.1",

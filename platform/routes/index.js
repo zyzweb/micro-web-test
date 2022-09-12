@@ -11,6 +11,7 @@ router.get('/start', function(req, res, next) {
   const changeUrl = path.join(root, name)
   const originPath = path.join(__dirname, '../../', name)
   const originDist = path.join(originPath, '/dist')
+  console.log("-> originDist", originDist);
 
   let version
   let newVersion

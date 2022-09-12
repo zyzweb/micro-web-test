@@ -2,6 +2,7 @@ import React from "react";
 import globalConfig from "../../../config/globalConfig";
 import Countdown from "../../../hooks/useCountdown";
 import { main } from '../../../utils/global'
+
 import "./LoginPanel.scss"
 import axios from 'axios'
 
@@ -16,7 +17,7 @@ const LoginPanel = () => {
   }
 
   return (
-    <div className="panel">
+    <div className="panel"> 
       <img className="panelLogo" src={``}/>
       <h2 className="panelSubtitle">快速登录</h2>
 

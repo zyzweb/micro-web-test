@@ -1,12 +1,12 @@
 import { leftNav, headerState, footerState } from '../store';
 
-import { registerMicroApps, start } from 'test-micro-web';
+import { registerMicroApps, start } from '../../test-micro-web';
 
 export const starMicroApp = () => {
   // 注册子应用
   registerMicroApps(
     leftNav.navList,
-    // 生命周期
+    // 主应用的生命周期
     {
       beforeLoad: [
         app => {

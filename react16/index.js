@@ -17,6 +17,7 @@ export async function bootstrap() {
 }
 
 export async function mount(app) {
+  console.log("%c 🥥 app", "color:#ea7e5c", app);
   setMain(app)
   console.log('react mount')
   render()

@@ -7,8 +7,8 @@ export const navList = [
     name: 'react15',// 唯一
     entry: '//localhost:9002/',
     loading,
-    container: '#micro-container',
-    activeRule: '/react15',
+    container: '#micro-container', //显示容器
+    activeRule: '/react15',//激活路由
     appInfo,
   },
   {

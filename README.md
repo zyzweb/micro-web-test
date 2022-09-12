@@ -7,6 +7,7 @@
 - vue3 子应用
 - service 服务端
 - platform 发布平台
+  -bag打包之后的文件
 
 #### 子项目分类
 > 我的。计算器，关注度排行，上市新车 react16
@@ -57,7 +58,7 @@ http://localhost:8080/react16#/login
 ## 子应用
 http://localhost:9002/#/information  (react15)
 http://localhost:9003/#/rank  (react16)
-http://localhost:9004/#/energy  (vue2)
+http://localhost:9004/#/energy  (vue2)  http://localhost:8080/vue2#/energy
 http://localhost:9005/#/index  (vue3)
 
 ## 服务端
@@ -68,3 +69,21 @@ http://localhost:3001
 
 npm run dev  启动主应用 4个子应用  服务端
 发布平台要单独启动 在platform目录下
+
+主应用和子应用间的通信
+1. props
+2. customevent 自定义事件
+
+
+主应用控制子应用的加载 渲染  卸载 整个流程
+主应用连接子应用和微前端框架
+微前端框架 路由拦截  获取子应用  注册生命周期  加载子应用  渲染子应用  卸载子应用
+微前端生命周期函数中执行主应用的生命周期函数
+加载和解析子应用的html和 js
+应用沙箱用来子应用的变量  比如在 a应用 window.a = 1; 在b应用中应用访问不到window.a
+子应用生命周期应该跟微前端框架的生命周期一样
+用webpack的minicss plugin来处理css隔离 
+子应用和主应用通信通过props或者自定义事件
+子应用通信通过customEvent自定事件,要先添加事件然后在监听
+全局状态管理  
+在platform  启动index.html文件打包完成之后会返回响应

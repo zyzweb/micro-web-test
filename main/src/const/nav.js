@@ -2,7 +2,7 @@ export const NAV_LIST = [
   {
     name: '首页',
     status: true,
-    value: 0,
+    value: 0, // 序号没啥用
     url: '/vue3/#/index',
     hash: '',
   },

@@ -20,6 +20,10 @@ export async function bootstrap() {
 }
 
 export async function mount(app) {
+  window.aaa = 111
+  window.custom.emit('test', {
+    name: 'test111',
+  })
   setMain(app)
   render();
 }
